@@ -5,11 +5,13 @@ img.onload = function loaded() {
     count++;
     console.log(count);
     if(count == 1){
-        console.log("failed?");
+        console.log("failed");
+        document.querySelector('#test').style.color ="red";
         img.src = "https://www.w3schools.com/w3css/img_fjords.jpg";
     }
     else if(count > 1){
-        console.log("success");        
+        console.log("success");
+        document.querySelector('#test').style.color ="green";        
     }
 
 
